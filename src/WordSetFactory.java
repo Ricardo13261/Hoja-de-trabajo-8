@@ -25,20 +25,20 @@ class WordSetFactory {
             {
                 if (tipo == 2 )
                 {
-                    return new SplayTree();
+                    return new SplayTreeSet();
                 }
                 if (tipo == 3)
                 {
-                    return new RedBlackTree(); 
+                    //return new RedBlackTree(); 
                 }
                 if (tipo == 4)
                 {
-                    return (WordSet) new HashMap();
+                    //return (WordSet) new HashMap();
                 }
                 
                 if (tipo ==5)
                 {
-                    return (WordSet) new TreeMap();
+                    //return (WordSet) new TreeMap();
                 }
                         
             }		
