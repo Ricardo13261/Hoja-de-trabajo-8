@@ -43,7 +43,7 @@ class WordSetFactory {
                 
                 if (tipo ==5)
                 {
-                    //return (WordSet) new TreeMap();
+                    return  new TreeMapSet();
                 }
                         
             }		
