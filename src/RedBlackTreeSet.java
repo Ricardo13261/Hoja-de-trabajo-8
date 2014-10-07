@@ -1,13 +1,14 @@
 /**
  * Universidad del Valle de Guatemala
  * Algoritmos y Estructuras de Datos
- * Autores:
- *  Rafael Méndez, 11171
- *  Jose Angel Estrada, 11453
- *  Rodrigo Avelar, 11192
- *  Descripcion: esta clase implementa la interfaz que tiene como metodos el buscar una palabra asi
- *                  como insertar una nueva palabra a la estructura de datos
- */
+ * Profesor: Douglas Barrientos
+ *Autores:
+ *    Ricardo Franco, 13261
+ *    Aejandro Díaz, 13082
+ *    Jenry
+ * Esta clase permite realizar la implementación de la clase RedBlackTree y crear un palabra, insertar y buscar
+ */ 
+
 public class RedBlackTreeSet implements WordSet {
      private RedBlackTree base; 
      private Word palabra;
