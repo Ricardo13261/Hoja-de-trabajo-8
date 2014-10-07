@@ -66,9 +66,7 @@ public class RedBlackTree   {
         nullNode.element = x;
         current = header.right;
 
-        for( ; ; )
-        {
-            if( x.compareTo( current.element ) < 0 )
+                if( x.compareTo( current.element ) < 0 )
                 current = current.left;
             if( x.compareTo( current.element ) > 0 ) 
                 current = current.right;
@@ -76,7 +74,7 @@ public class RedBlackTree   {
                 return current.element;
             else
                 return null;
-        }
+        
     }
     /**
      * post: comprueba si el arbol esta vacio

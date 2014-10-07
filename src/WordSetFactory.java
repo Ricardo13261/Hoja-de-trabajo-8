@@ -6,6 +6,7 @@ Autor: Eduardo Castellanos
 
 Descripci�n: WordSetFactory. Clase  utilizada para instanciar los diferentes tipos de sets. 
 */
+
 import java.util.HashMap;
 import java.util.TreeMap;
 class WordSetFactory {
@@ -29,11 +30,11 @@ class WordSetFactory {
                 }
                 if (tipo == 3)
                 {
-                    //return new RedBlackTree(); 
+                    return new RedBlackTreeSet(); 
                 }
                 if (tipo == 4)
                 {
-                    //return (WordSet) new HashMap();
+                    return  new HashMapSet ();
                 }
                 
                 if (tipo ==5)
