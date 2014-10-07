@@ -5,8 +5,9 @@
  *Autores:
  *    Ricardo Franco, 13261
  *    Aejandro Díaz, 13082
- *    Jenry
- * Esta clase crea un nodo para la implementación redBlackTree
+ *    Henry
+ *    Esta clase crea un nodo para la implementación redBlackTree
+ *    Bibliografia: http://users.cis.fiu.edu/~weiss/dsaajava/code/DataStructures/RedBlackNode.java
  */ 
 public class RedBlackNode
     {
