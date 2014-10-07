@@ -1,13 +1,14 @@
 /**
  * Universidad del Valle de Guatemala
  * Algoritmos y Estructuras de Datos
- * Autores:
- *  Rafael Méndez, 11171
- *  Jose Angel Estrada, 11453
- *  Rodrigo Avelar, 11192
- *  Descripcion: esta clase implementa la estructura red black tree
- *  Codigo extraido de: http://users.cis.fiu.edu/~weiss/dsaajava/code/DataStructures/RedBlackTree.java
- */
+ * Profesor: Douglas Barrientos
+ *Autores:
+ *    Ricardo Franco, 13261
+ *    Aejandro Díaz, 13082
+ *    Jenry
+ * Una de las implementaciones solicitadas por el temario
+ */ 
+
 public class RedBlackTree   {   
 
     private RedBlackNode header;
