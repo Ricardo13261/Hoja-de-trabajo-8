@@ -1,8 +1,12 @@
-/*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7 
-Autor: Eduardo Castellanos
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos
+ * Profesor: Douglas Barrientos
+ *Autores:
+ *    Ricardo Franco, 13261
+ *    Aejandro Díaz, 13082
+ *    Jenry
+ Enviado por el catedratico, basado en el código de Eduardo Castellanos
 
 Descripci�n: WordSetFactory. Clase  utilizada para instanciar los diferentes tipos de sets. 
 */

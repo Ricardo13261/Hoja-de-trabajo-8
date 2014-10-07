@@ -1,10 +1,13 @@
-/*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7
-Autor: Eduardo Castellanos
-
-Descripci�n: SimpleSet ejemplo con ArrayList.
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos
+ * Profesor: Douglas Barrientos
+ * hoja de trabajo 7
+ *Autores:
+ *    Ricardo Franco, 13261
+ *    Aejandro Díaz, 13082
+ *    Jenry
+ * Descripción: SimpleSet ejemplo con ArrayList.
 */
 import java.util.ArrayList;
 

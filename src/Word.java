@@ -1,10 +1,15 @@
-/*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7 
-Autor: Eduardo Castellanos
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos
+ * Profesor: Douglas Barrientos
+ *Autores:
+ *    Ricardo Franco, 13261
+ *    Aejandro Díaz, 13082
+ *    Jenry
+ Enviado por el catedratico, basado en el código de Eduardo Castellanos
 
-Descripci�n: Word. Clase para almacenar las palabras junto con su tipo. 
+
+Descripción: Word. Clase para almacenar las palabras junto con su tipo. 
 */
 class Word implements Comparable<Word> {
 	private String word;
@@ -34,7 +39,7 @@ class Word implements Comparable<Word> {
 		return (obj instanceof Word && getWord().equals(((Word)obj).getWord()));
 	}
 	
-	// M�todos de acceso..
+	// Métodos de acceso..
 	public void setWord(String word)
 	{
 		this.word=word;
