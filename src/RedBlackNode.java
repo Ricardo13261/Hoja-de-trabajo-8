@@ -22,7 +22,7 @@ public class RedBlackNode
             element  = theElement;
             left     = lt;
             right    = rt;
-            color    = RedBlackTree.BLACK;
+            //color    = RedBlackTree.BLACK;
         }
 
             // Friendly data; accessible by other package routines
