@@ -15,14 +15,14 @@ import java.util.HashMap;
 class WordTypeCounter {
 	public static void main(String[] args) throws Exception
 	{
-		if(args.length > 1)
+		
 		{
 			// Declaraci�n e inicializaci�n de variables.
 			// el primer parametro indica el nombre del archivo con las definiciones de las palabras
-			File wordFile = new File(args[0]);
+			File wordFile = new File("files\\words.txt");
 			
 			// el segundo parametro indica el nombre del archivo que tiene el texto a analizar
-			File textFile = new File(args[1]);
+			File textFile = new File("files\\text.txt");
 			
 			// el tercer parametro sirve para seleccionar la implementacion que se usara para
 			// guardar el conjunto de palabras. Use el valor 1 para indicar que se empleara
@@ -32,7 +32,7 @@ class WordTypeCounter {
 			//  3 Splay Tree
 			//  4 Hash Table
 			//  5 TreeMap (de java collection framework)
-			int implementacion = Integer.parseInt(args[2]);
+			int implementacion = 1;
 			
 			BufferedReader wordreader;
 			BufferedReader textreader;
@@ -139,9 +139,5 @@ class WordTypeCounter {
 				System.out.println("No encuentro los archivos :'( ");
 			}
 		}
-		else
-		{
-			System.out.println("Faltan Parametros.");
-		}
-	}
+			}
 }

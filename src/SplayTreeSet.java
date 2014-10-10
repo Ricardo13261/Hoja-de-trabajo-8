@@ -26,8 +26,8 @@ public class SplayTreeSet implements WordSet{
      */
     @Override
     public Word get(Word word){
-        Word temp = (Word)base.find(word);
-        return temp;
+        Word dato = (Word)base.find(word);
+        return dato;
     }
     /**
      * post: añade una nueva palabra a la estructura

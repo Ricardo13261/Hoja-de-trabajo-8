@@ -13,15 +13,6 @@
 
     public class RedBlackTree
     {
-        
-        private static RedBlackNode current;
-        private static RedBlackNode parent;
-        private static RedBlackNode grand;
-        private static RedBlackNode great;
-        private RedBlackNode header;
-        private static RedBlackNode nullNode;
-        static final int BLACK = 1;    // Black must be 1
-        static final int RED   = 0;
         /**
          * Construct the tree.
          * @param negInf a value less than or equal to all others.
@@ -31,6 +22,10 @@
             header      = new RedBlackNode( negInf );
             header.left = header.right = nullNode;
         }
+
+    RedBlackTree() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
         /**
          * Insert into the tree. Does nothing if item already present.
@@ -196,8 +191,16 @@
                 current.color = BLACK;
             }
             header.right.color = BLACK; // Make root black
-        
         }
+
+        /**
+         * Internal routine that performs a single or double rotation.
+         * Because the result is attached to the parent, there are four cases.
+         * Called by handleReorient.
+         * @param item the item in handleReorient.
+         * @param parent the parent of the root of the rotated subtree.
+         * @return the root of the rotated subtree.
+         */
         private RedBlackNode rotate( Comparable item, RedBlackNode parent )
         {
             if( item.compareTo( parent.element ) < 0 )
@@ -209,7 +212,11 @@
                     rotateWithLeftChild( parent.right ) :  // RL
                     rotateWithRightChild( parent.right );  // RR
         }
-         static RedBlackNode rotateWithLeftChild( RedBlackNode k2 )
+
+        /**
+         * Rotate binary tree node with left child.
+         */
+        static RedBlackNode rotateWithLeftChild( RedBlackNode k2 )
         {
             RedBlackNode k1 = k2.left;
             k2.left = k1.right;
@@ -227,5 +234,22 @@
             k2.left = k1;
             return k2;
         }
-    }
+
+        private RedBlackNode header;
+        private static RedBlackNode nullNode;
+            static         // Static initializer for nullNode
+            {
+                nullNode = new RedBlackNode( null );
+                nullNode.left = nullNode.right = nullNode;
+            }
+
+        static final int BLACK = 1;    // Black must be 1
+        static final int RED   = 0;
+
+            // Used in insert routine and its helpers
+        private static RedBlackNode current;
+        private static RedBlackNode parent;
+        private static RedBlackNode grand;
+        private static RedBlackNode great;
     
+  }

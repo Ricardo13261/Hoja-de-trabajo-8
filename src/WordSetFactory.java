@@ -30,11 +30,11 @@ class WordSetFactory {
             {
                 if (tipo == 2 )
                 {
-                    return new SplayTreeSet();
+                    return new RedBlackTreeSet();
                 }
                 if (tipo == 3)
                 {
-                    return new RedBlackTreeSet(); 
+                    return new SplayTreeSet(); 
                 }
                 if (tipo == 4)
                 {

@@ -11,12 +11,14 @@
 
 public class RedBlackTreeSet implements WordSet {
      private RedBlackTree base; 
-     private Word palabra;
+     Word palabra;
         
     /**
      * post: se instancia el splay tree
      */
-    public RedBlackTreeSet(){
+    public RedBlackTreeSet()
+    {
+        palabra = new Word();
         base = new RedBlackTree(palabra);
     }
 
@@ -26,7 +28,8 @@ public class RedBlackTreeSet implements WordSet {
      * @return 
      */
     @Override
-    public Word get(Word word){
+    public Word get(Word word)
+    {
         Word temp = (Word)base.find(word);
         return temp;
     }
@@ -35,7 +38,8 @@ public class RedBlackTreeSet implements WordSet {
      * @param wordObject 
      */
     @Override
-    public void add(Word wordObject){
+    public void add(Word wordObject)
+    {
         base.insert(wordObject);
     }
 
